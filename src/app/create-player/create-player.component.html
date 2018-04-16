@@ -1,0 +1,12 @@
+
+<div class="form-group">
+  <label for="pseudoJoueur1">Pseudo du joueur 1</label>
+  <input type="text" class="form-control" id="pseudoJoueur1"placeholder="Pseudo Joueur 1" #pseudoJoueur1>
+</div>
+<div class="form-group">
+  <label for="pseudoJoueur2">Pseudo du joueur 2</label>
+  <input type="text" class="form-control" id="pseudoJoueur2"placeholder="Pseudo Joueur 2" #pseudoJoueur2>
+</div>
+
+<button  class="btn btn-primary" (click)="validatePlayers(pseudoJoueur1.value, pseudoJoueur2.value)">Démarrer la partie</button>
+

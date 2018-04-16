@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="jumbotron">
+    <div *ngIf="gameLaunched == false">
+
+    <div style="text-align:center">
+      <h1>
+        Bienvenue sur la : {{ title }}
+      </h1>
+    </div>
+    <app-bateau></app-bateau>
+
+    <h1>Lancer une partie : </h1>
+    <button type="button" (click)="loadGame()" class="btn btn-primary">C'est parti ! </button>
+
+    </div>
+    <div *ngIf="gameLaunched">
+    <app-create-player></app-create-player>
+    </div>
+  </div>
+</div>

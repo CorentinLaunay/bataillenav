@@ -1,0 +1,7 @@
+<h2>Voici les bateaux à votre disposition : </h2>
+<ul>
+  <li *ngFor="let bateau of listeBateaux">
+  <p>ID du bateau : {{bateau.id}}, Nom : {{ bateau.name | uppercase }}, Longueur :  {{bateau.longueur}}</p>
+  </li>
+</ul>
+
